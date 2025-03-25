@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 	<body class="is-preload">
 
@@ -32,7 +33,7 @@
 									</header>
                                     <div class="main">
                                         <ul class="cards">
-                                          <li class="cards_item">
+                                          <li class="cards_item" data-aos="fade-up">
                                             <div class="card">
                                               <div class="card_image"><img src="images/1.jpg"></div>
                                               <div class="card_content">
@@ -42,7 +43,7 @@
                                               </div>
                                             </div>
                                           </li>
-                                          <li class="cards_item">
+                                          <li class="cards_item" data-aos="fade-up">
                                             <div class="card">
                                               <div class="card_image"><img src="images/2.jpg"></div>
                                               <div class="card_content">
@@ -53,7 +54,7 @@
                                               </div>
                                             </div>
                                           </li>
-                                          <li class="cards_item">
+                                          <li class="cards_item" data-aos="fade-up">
                                             <div class="card">
                                               <div class="card_image"><img src="images/3.jpg"></div>
                                               <div class="card_content">
@@ -70,7 +71,7 @@
 									</header>
                                       <div class="main">
                                         <ul class="cards">
-                                          <li class="cards_item">
+                                          <li class="cards_item" data-aos="fade-up">
                                             <div class="card">
                                               <div class="card_image"><img src="images/4.jpg" style="padding:20px"></div>
                                             </div>
@@ -92,19 +93,28 @@
 									<h2>Menu</h2>
 								</header>
 								<ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="generic.html">About Me</a></li>
-                                    <li>
-                                        <span class="opener">Research</span>
-                                        <ul>
-                                            <li><a href="facilities.html">Facilities</a></li>
-                                            <li><a href="research.html">Research Expertise</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="academic.html">Academic</a></li>
-                                    <li><a href="publications.html">Publications</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                </ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="generic.html">About Me</a></li>
+									<li>
+										<span class="opener">Research</span>
+										<ul>
+											<li><a href="facilities.html">Facilities</a></li>
+											<li><a href="listofprojects.html">List of Projects Ongoing/Completed</a></li>
+											<li>
+												<span class="opener">Team</span>
+												<ul>
+													<li><a href="CurrentTeam.html">Current Members</a></li>
+													<li><a href="Alumni.html">Alumni</a></li>
+												</ul>
+											</li>
+											<li><a href="workshops.html">Workshops &Invited Talks</a></li>
+											<li><a href="publications.html">Publications</a></li>
+											<li><a href="conferences.html">Conferences</a></li>
+										</ul>
+									</li>
+									<li><a href="academic.html">Academic</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+								</ul>
 							</nav>
 							<!-- Section -->
 							<section>
@@ -130,6 +140,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			<script>
+			  AOS.init();
+			</script>
 
 	</body>
 </html>
