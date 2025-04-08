@@ -20,7 +20,7 @@
 							<header id="header">
 								<a href="index.html" class="logo"><img src="./images/iitb.png" style="width:125px"></a>
 								<div style="display:block">
-									<div style="color:grey">Metallurgical Engineering and Material Sciences</div>
+									<div style="color:grey">Metallurgical Engineering and Materials Sciences</div>
 									<div>Indian Institute of Technology Bombay</div>
 									<div>Powai, Mumbai 400076, INDIA</div>
 								</div>
@@ -35,11 +35,14 @@
 									<li><a href="">Deepoo Kumar</a> and <a href="">Sandeep Kumar</a>: A composite for refining of steel and method for preparation thereof, Indian patent number 559193, Awarded on 30/01/2025</li>
 									
 								</ul>
-								
+								<h2>2. Award/Recognition</h2>
+								<ul style="color:black;font-weight:550">
+									<li data-aos="fade-up"><a>2025 Charles H. Herty Jr. Award</a> by AIST for paper entitled “On (%FeO)-[%C] Correlation During Primary Steelmaking.”</li>
+								</ul>
 							</section>
 							<section>
 								<header class="major">
-									<h2>2. Journal Publication</h2>
+									<h2>3. Journal Publication</h2>
 								</header>
 								<ul style="color:black;font-weight:550">
 									<li>Haidar, SK Wasim, Samiraj, A Rozario, Kumar Deepoo, Thermodynamic modelling of liquid steel tapping process to predict carryover slag amount, Ironmaking & Stelemaking (Accepted on 18th July 2024)</li>
@@ -60,9 +63,9 @@
 							</section>
 								<section>
 									<header class="major">
-                                        <h2>3. Publication/presentation</h2>
+                                        <h2>4. Conference Paper/Presentation</h2>
                                     </header>
-                                    <div id="conference-list">
+                                    <div>
                                         <h3 style="font-size:18px;font-weight:650;color:rgb(134, 38, 38);">Mu, W., Shen, C., Xuan, C., Kumar, D., Wang, Q., Park, J.H., A machine learning model to 
                                             predict non-metallic inclusion dissolution in the metallurgical slag, MOLTEN 2024, Brisbane, Australia</h3>
                                         <h3 style="font-size:18px;font-weight:650;color:rgb(134, 38, 38);">Kumar, S., Viswanathan N. N., Kumar, D., On the stability of CaS in liquid steel containing alumina or spinel inclusions, MOLTEN 2024, Brisbane, Australia
@@ -94,11 +97,7 @@
                                         <h3>D. Kumar, N.B. Ballal, S. Basu, In-situ alloying during electro-slag refining of low alloy steel, in: Int. Conf. on Sci. Tech. Ironmaking Steelmaking, Jamshedpur, 2013, paper SMTO-3</h3>
                                         
                                     </div>
-                                    <div id="pagination-controls">
-                                        <button id="prev-btn" disabled>Previous</button>
-                                        <span id="page-info"></span>
-                                        <button id="next-btn">Next</button>
-                                    </div>
+    
                                 </section>
 
 						</div>
@@ -121,6 +120,7 @@
 										<ul>
 											<li><a href="facilities.html">Facilities</a></li>
 											<li><a href="listofprojects.html">List of Projects Ongoing/Completed</a></li>
+											<li><a href="conferences.html">Publication/Patent</a></li>
 											<li>
 												<span class="opener">Team</span>
 												<ul>
@@ -129,7 +129,7 @@
 												</ul>
 											</li>
 											<li><a href="workshops.html">Workshops &Invited Talks</a></li>
-											<li><a href="conferences.html">Publication/Patent</a></li>
+											
 										</ul>
 									</li>
 									<li><a href="academic.html">Academic</a></li>
@@ -155,50 +155,7 @@
 			</div>
 
 		<!-- Scripts -->
-        <script>
-			const itemsPerPage = 5;
-			const listContainer = document.getElementById("conference-list");
-			const items = Array.from(listContainer.children);
-			const totalPages = Math.ceil(items.length / itemsPerPage);
-			let currentPage = 1;
-		
-			function renderPage(page) {
-				// Hide all items
-				items.forEach((item, index) => {
-					item.style.display = "none";
-				});
-		
-				// Show only items for the current page
-				const start = (page - 1) * itemsPerPage;
-				const end = start + itemsPerPage;
-				items.slice(start, end).forEach((item) => {
-					item.style.display = "block";
-				});
-		
-				// Update pagination controls
-				document.getElementById("prev-btn").disabled = page === 1;
-				document.getElementById("next-btn").disabled = page === totalPages;
-				document.getElementById("page-info").innerText = `Page ${page} of ${totalPages}`;
-			}
-		
-			// Add event listeners to buttons
-			document.getElementById("prev-btn").addEventListener("click", () => {
-				if (currentPage > 1) {
-					currentPage--;
-					renderPage(currentPage);
-				}
-			});
-		
-			document.getElementById("next-btn").addEventListener("click", () => {
-				if (currentPage < totalPages) {
-					currentPage++;
-					renderPage(currentPage);
-				}
-			});
-		
-			// Initial render
-			renderPage(currentPage);
-		</script>
+        
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
